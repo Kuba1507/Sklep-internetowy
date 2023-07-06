@@ -1,0 +1,24 @@
+@keyframes glowing {
+	0% {
+		color: white;
+	}
+
+	25% {
+		background-color: rgb(151, 151, 151);
+		color: black;
+	}
+
+	50% {
+		background-color: white;
+		color: black;
+	}
+
+	75% {
+		background-color: rgb(151, 151, 151);
+		color: black;
+	}
+
+	100% {
+		color: white;
+	}
+}

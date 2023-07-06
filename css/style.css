@@ -1,0 +1,343 @@
+@keyframes glowing {
+  0% {
+    color: white;
+  }
+  25% {
+    background-color: rgb(151, 151, 151);
+    color: black;
+  }
+  50% {
+    background-color: white;
+    color: black;
+  }
+  75% {
+    background-color: rgb(151, 151, 151);
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: "Ysabeau Infant", sans-serif;
+  background-color: #c9bfb1;
+  overflow-x: hidden;
+}
+
+.shadow-bg {
+  background-color: rgba(127, 127, 103, 0.968627451);
+}
+
+nav {
+  z-index: 10;
+  transition: 0.5s;
+}
+nav .nav-link {
+  position: relative;
+  margin-left: 15px;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+  transition: color 0.4s;
+}
+nav .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  height: 1px;
+  width: 0;
+  background: #beaca2;
+  border-radius: 50px;
+  transition: width 0.6s linear;
+}
+nav .nav-link:hover:before {
+  width: 85%;
+}
+nav .navbar-nav:hover,
+nav .nav-link.active:hover,
+nav .navbar-nav .nav-link:hover {
+  color: #615d45;
+}
+nav .navbar-brand {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgb(60, 60, 60);
+}
+nav .navbar-brand span.element-first {
+  transition: color 0.4s;
+}
+nav .navbar-brand span.element-second {
+  color: #615d45;
+  transition: color 0.4s;
+}
+nav .navbar-brand:hover .element-second {
+  color: black;
+}
+nav .navbar-brand:hover .element-first {
+  color: #615d45;
+}
+nav .navbar-brand:hover .fa-shirt {
+  color: #615d45;
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav .fa-bars {
+  padding: 5px 10px;
+  font-size: 25px;
+  color: black;
+}
+nav .fa-shirt {
+  transition: color 0.4s;
+}
+
+header.hero-img {
+  position: relative;
+  height: 45vh;
+  background-image: url("../img/freestocks-_3Q3tsJ01nc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -5;
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: rgb(206, 206, 206);
+}
+header.hero-img .hero-text h1 {
+  font-size: 20px;
+}
+header.hero-img .hero-text p {
+  font-size: 13px;
+}
+header.hero-img .hero-text .btn {
+  position: absolute;
+  bottom: 20px;
+  font-size: 10px;
+  border-radius: 10px;
+  color: white;
+  outline-color: rgb(206, 206, 206);
+  animation: glowing 5s linear infinite;
+}
+header.hero-img .btn:hover {
+  color: black;
+}
+
+main .section-title {
+  margin-top: 100px;
+  font-weight: bold;
+}
+main .underline {
+  margin: 0 auto 20px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+main .aboutus {
+  margin-top: 120px;
+}
+main .aboutus .first-block .text::first-letter {
+  margin: 0 10px 0;
+  initial-letter: 2;
+}
+main .aboutus .first-block .first-photo img {
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 7px 3px 3px rgb(58, 58, 58);
+}
+main .aboutus .second-block {
+  margin-top: 20px;
+}
+main .aboutus .second-block .second-block-text {
+  font-size: 20px;
+  color: rgba(12, 12, 10, 0.968627451);
+  transition: scale 0.5s, color 0.5s;
+}
+main .aboutus .second-block i {
+  font-size: 35px;
+  transition: scale 0.5s, color 0.5s;
+}
+main .aboutus .second-block:hover i {
+  color: rgba(127, 127, 103, 0.968627451);
+  scale: 1.2;
+}
+main .aboutus .second-block:hover .second-block-text {
+  color: rgba(127, 127, 103, 0.968627451);
+  scale: 1.2;
+}
+main .aboutus .carousel {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+main .aboutus .carousel-item {
+  height: 550px;
+}
+main .aboutus .carousel-item img {
+  width: 100%;
+}
+main .aboutus .carousel-caption {
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+main .aboutus .card-group img {
+  height: 300px;
+}
+main .aboutus .card-body {
+  background-color: #c8c2be;
+  height: 140px;
+}
+main .aboutus h5 {
+  font-weight: bold;
+}
+main .woman .card-group .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+main .woman .card-group .card .card-img-top {
+  height: 170px;
+}
+main .woman .card-group .card .card-body {
+  padding-top: 10px;
+  height: 190px;
+  background-color: #dcdcdc;
+  color: black;
+}
+main .woman .card-group .card .card-title {
+  font-weight: bold;
+}
+main .woman .card-group .card .card-footer {
+  border-top: 1px solid rgba(127, 127, 103, 0.968627451);
+}
+main .woman .card-group .card .card-footer .price {
+  display: inline;
+  margin-right: 5px;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+main .woman .card-group .card .card-footer .old-price {
+  display: inline;
+  font-size: 14px;
+  color: rgba(127, 127, 103, 0.968627451);
+  text-decoration: line-through;
+}
+main .woman .card-group .card .card-title {
+  font-size: 16px;
+}
+main .woman .card-group .card .card-text {
+  font-size: 12px;
+}
+
+.card-group img {
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-group .card {
+  margin: 15px;
+}
+.card-group .card-body {
+  padding: 5px;
+  height: 140px;
+}
+
+@media (max-width: 280px) {
+  nav .navbar-brand {
+    font-size: 16px;
+  }
+}
+@media (min-width: 320px) {
+  .woman .fourth-block .card-group .card .card-img-top {
+    height: 220px;
+  }
+  .woman .fourth-block .card-group .card .card-body {
+    height: 230px;
+  }
+  .woman .fourth-block .card-group .card .card-body .card-title {
+    font-size: 18px;
+  }
+  .woman .fourth-block .card-group .card .card-body .card-text {
+    font-size: 16px;
+  }
+  .woman .fourth-block .card-group .card .card-footer .price {
+    font-size: 20px;
+  }
+  .woman .fourth-block .card-group .card .card-footer .old-price {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 26px;
+  }
+  header.hero-img {
+    height: 55vh;
+  }
+  header.hero-img .hero-text h1 {
+    font-size: 45px;
+  }
+  header.hero-img .hero-text p {
+    font-size: 22px;
+  }
+  header.hero-img .hero-text .btn {
+    bottom: 10px;
+    font-size: 18px;
+  }
+  main .first-block .first-info {
+    font-size: 22px;
+  }
+  main .first-block .first-photo img {
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 7px 3px 3px rgb(58, 58, 58);
+  }
+  main .card-group .card {
+    margin: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+@media (min-width: 992px) {
+  .woman .fourth-block .card-group .card .card-img-top {
+    height: 350px;
+  }
+  .woman .fourth-block .card-group .card .card-body {
+    padding: 10px;
+    height: 230px;
+  }
+  .woman .fourth-block .card-group .card .card-body .card-title {
+    font-size: 22px;
+  }
+  .woman .fourth-block .card-group .card .card-body .card-text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .woman .fourth-block .card-group .card .card-footer .price {
+    font-size: 24px;
+  }
+  .woman .fourth-block .card-group .card .card-footer .old-price {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

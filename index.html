@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AlexandraStore</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons8-dress-48.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55566defb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navId">
+
+    <nav class="navbar navbar-expand-lg position-sticky top-0" id="navId">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-shirt"></i>
+                <span class="element-first">Alexandra</span><span class="element-second">Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#woman">Kobieta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#man">Mężczyzna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#child">Dziecko</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="hero-img" id="home">
+        <div class="hero-text text-center">
+            <h1 data-aos="fade-up">Witaj w sklepie Alexandra<span data-aos="fade-up">Store!</span></h1>
+            <p data-aos="fade-up">Nie wiesz w co się ubrać? Perfekcyjnie.</p>
+            <a href="#aboutus" class="btn btn-outline-light pb-2" data-aos="fade-up">Sprawdź nas!</a>
+        </div>
+        <div class="hero-shadow"></div>
+    </header>
+
+    <main>
+        <section id="aboutus" class="aboutus">
+            <div class="container">
+                <h2 class="section-title">Kim jesteśmy?</h2>
+                <div class="underline"></div>
+                <div class="first-block d-flex flex-column flex-md-row align-items-md-center">
+                    <div class="first-info">
+                        <p class="text">Jesteśmy dumnymi właścicielami tego sklepu z odzieżą używaną, który powstał z
+                            pasji do mody i
+                            zainteresowania ochroną środowiska. Nasza misja polega na zapewnieniu Ci wysokiej jakości,
+                            modnej odzieży w przystępnych cenach, jednocześnie promując ideę zrównoważonego rozwoju.
+                            W AlexandraStore wierzymy, że każdy ubiór ma swoją historię do opowiedzenia. Dlatego
+                            skupiamy
+                            się na starannie wyselekcjonowanym asortymencie, który obejmuje unikalne i interesujące
+                            części
+                            garderoby. Nasze produkty są starannie oceniane i wybierane tak, aby zapewnić Ci wyjątkowe i
+                            stylowe ubrania, które wyróżnią Cię z tłumu.</p>
+                    </div>
+                    <div class="first-photo">
+                        <img src="./img/fashion-2309519_1280.jpg" class="img-fluid" alt="Kobieta w kapeluszu">
+                    </div>
+                </div>
+                <h2 class="section-title">Co robimy?</h2>
+                <div class="underline"></div>
+                <div class="row text-center">
+                    <div class="col-sm-6 col-lg-3 second-block" data-aos="zoom-in-left">
+                        <i class="fa-solid fa-hat-cowboy"></i>
+                        <p class="second-block-text mt-1">Dbamy o Twój styl!</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 second-block" data-aos="zoom-in-left">
+                        <i class="fa-solid fa-vest-patches"></i>
+                        <p class="second-block-text mt-1">Projektujemy ubrania dla Ciebie!</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 second-block" data-aos="zoom-in-right">
+                        <i class="fa-solid fa-glasses"></i>
+                        <p class="second-block-text mt-1">Tworzymy całe kolekcje!</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 second-block" data-aos="zoom-in-right">
+                        <i class="fa-brands fa-pagelines"></i>
+                        <p class="second-block-text mt-1">Dbamy o środowisko!</p>
+                    </div>
+                </div>
+                <h2 class="section-title">Nasi zadowoleni klienci!</h2>
+                <div class="underline"></div>
+                <div class="third-block d-flex justify-content-center">
+
+                    <div class="card-group d-lg-none text-center  m-4">
+                        <div class="card border">
+                            <img src="./img/carousel-1.jpg" class="card-img-top"
+                                alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Ania</h5>
+                                <p class="card-text">Nasza zadowolona klientka. 😝</p>
+                                <p class="card-text">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border">
+                            <img src="./img/carousel-2.jpg" class="card-img-top"
+                                alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Marzena</h5>
+                                <p class="card-text">Stała klientka od 2 lat. 🤗</p>
+                                <p class="card-text">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border">
+                            <img src="./img/carousel-3.jpg" class="card-img-top"
+                                alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Angelika</h5>
+                                <p class="card-text">Nasze ubrania zabiera ze sobą na każde wakacje. 😎</p>
+                                <p class="card-text">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/carousel-1.jpg" class="d-block w-100 img-one"
+                                    alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ania</h5>
+                                    <p>Nasza zadowolona klientka. 😝</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carousel-2.jpg" class="d-block w-100 img-two"
+                                    alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Marzena</h5>
+                                    <p>Stała klientka od 2 lat. 🤗</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carousel-3.jpg" class="d-block w-100 img-three"
+                                    alt="Kobieta w ubraniach ze sklepu AlexandraStore">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Angelika</h5>
+                                    <p>Nasze ubrania zabiera ze sobą na każde wakacje. 😎</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="woman" class="woman">
+            <div class="container">
+                <h2 class="section-title">Dział damski</h2>
+                <div class="underline"></div>
+                <div class="fourth-block">
+                    <div class="card-group d-flex justify-content-center text-center slick-carousel">
+                        <div class="card">
+                            <img src="./img/s1.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Klasyczna czarna koktajlowa sukienka</h5>
+                                <p class="card-text">Elegancka i ponadczasowa sukienka, idealna na wieczorne wyjścia i
+                                    specjalne okazje. </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">129,99zł</p>
+                                <p class="old-price">189,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/s2.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Luźna sukienka z dżersejowej dzianiny</h5>
+                                <p class="card-text">Wygodna i modna sukienka wykonana z miękkiej dżersejowej dzianiny,
+                                    idealna na codzienne stylizacje.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">139,99zł</p>
+                                <p class="old-price">159,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/s3.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Sukienka z klasycznym paskiem</h5>
+                                <p class="card-text">Sukienka o prostym kroju z eleganckim paskiem, podkreślającym talię
+                                    i dodającym szyku.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">119,99zł</p>
+                                <p class="old-price">199,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/s4.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Sukienka z falbanowymi rękawami</h5>
+                                <p class="card-text">Modna sukienka z dekoracyjnymi falbanowymi rękawami, dodająca
+                                    lekkości i dziewczęcego uroku.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">159,99zł</p>
+                                <p class="old-price">169,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/s5.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Sukienka wieczorowa z cekinami</h5>
+                                <p class="card-text">Efektowna sukienka wieczorowa zdobiona błyszczącymi cekinami,
+                                    zapewniająca niezapomniany wygląd na specjalne okazje.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">229,99zł</p>
+                                <p class="old-price">319,99zł</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="man" class="woman">
+            <div class="container">
+                <h2 class="section-title">Dział męski</h2>
+                <div class="underline"></div>
+                <div class="fourth-block">
+                    <div class="card-group d-flex justify-content-center text-center slick-carousel">
+                        <div class="card">
+                            <img src="./img/m1.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Klasyczny garnitur z wełny</h5>
+                                <p class="card-text">Elegancki i dopasowany garnitur z wysokiej jakości wełny, idealny
+                                    na specjalne okazje i formalne wydarzenia.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">129,99zł</p>
+                                <p class="old-price">189,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/m2.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Pikowany płaszcz ze stójka</h5>
+                                <p class="card-text">Stylowy płaszcz o pikowanym wzorze z wygodną stójką, doskonały na
+                                    chłodniejsze dni i wieczorne spotkania.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">139,99zł</p>
+                                <p class="old-price">159,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/m3.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Elegancka marynarka z jednokolorowego materiału</h5>
+                                <p class="card-text">Stonowana i stylowa marynarka z gładkiego materiału, doskonała do
+                                    tworzenia wyrafinowanych zestawów.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">119,99zł</p>
+                                <p class="old-price">199,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/m4.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Elegancka koszula w jasnych odcieniach</h5>
+                                <p class="card-text">Wyrafinowana koszula w delikatnych jasnych odcieniach, idealna na
+                                    formalne i wieczorowe wyjścia.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">159,99zł</p>
+                                <p class="old-price">169,99zł</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="child" class="woman">
+            <div class="container">
+                <h2 class="section-title">Dział dziecięcy</h2>
+                <div class="underline"></div>
+                <div class="fourth-block">
+                    <div class="card-group d-flex justify-content-center text-center slick-carousel">
+                        <div class="card">
+                            <img src="./img/k1.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Kolorowa sukienka w kwiaty dla dziewczynki</h5>
+                                <p class="card-text">Wesoła i barwna sukienka z uroczym wzorem kwiatowym, idealna na
+                                    letnie zabawy i uroczystości.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">129,99zł</p>
+                                <p class="old-price">189,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/k2.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Pikowany płaszcz ze stójka</h5>
+                                <p class="card-text">Stylowy płaszcz o pikowanym wzorze z wygodną stójką, doskonały na
+                                    chłodniejsze dni i wieczorne spotkania.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">139,99zł</p>
+                                <p class="old-price">159,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/k3.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Słodki sweter z motywem zwierzątek</h5>
+                                <p class="card-text">Przytulny sweter ozdobiony uroczymi motywami zwierzątek, idealny na
+                                    chłodniejsze dni i wieczorne spacery.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">119,99zł</p>
+                                <p class="old-price">199,99zł</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/k4.jpg" class="card-img-top"
+                                alt="Kobieta w sukience ze sklepu AlexandraStore">
+                            <div class="card-body">
+                                <h5 class="card-title">Elastyczne legginsy dla dziewczynek</h5>
+                                <p class="card-text">Wygodne i elastyczne legginsy, doskonałe na codzienne aktywności i
+                                    sportowe zajęcia.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">159,99zł</p>
+                                <p class="old-price">169,99zł</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light mt-5 py-4 text-center">
+        <p class="mb-0">&copy; 2023 | AlexandraStore</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true,
+        });
+    </script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
